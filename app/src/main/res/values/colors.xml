@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Background">#030975</color>
+    <color name="Sign_in_Background">#D9D9D9</color>
+    <color name="Popular_Scroll_Back">#FDF7E0</color>
+    <color name="Red">#FF0001</color>
+</resources>
