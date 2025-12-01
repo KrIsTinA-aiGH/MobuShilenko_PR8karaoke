@@ -11,30 +11,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PR9karaoke">
-        <activity
-            android:name=".albums"
-            android:exported="false" />
-        <activity
-            android:name=".raspberryberry"
-            android:exported="false" />
-        <activity
-            android:name=".people"
-            android:exported="false" />
+
+        <!-- Экран входа -->
         <activity
             android:name=".main"
-            android:exported="false" />
-        <activity
-            android:name=".activity_popular"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Экран альбомов -->
+        <activity
+            android:name=".albums"
+            android:exported="false" />
+
+        <!-- Экран популярных песен -->
+        <activity
+            android:name=".people"
+            android:exported="false" />
+
+        <!-- Экран конкретной песни -->
+        <activity
+            android:name=".raspberryberry"
+            android:exported="false" />
+
     </application>
 
 </manifest>

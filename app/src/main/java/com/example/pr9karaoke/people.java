@@ -1,6 +1,8 @@
 package com.example.pr9karaoke;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,16 @@ public class people extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageView imageView7 = findViewById(R.id.imageView7);
+
+        if (imageView7 != null) {
+            imageView7.setOnClickListener(v -> {
+                // Переход на экран песни "Ягода Малинка"
+                Intent intent = new Intent(people.this, raspberryberry.class);
+                startActivity(intent);
+            });
+        }
+
     }
 }

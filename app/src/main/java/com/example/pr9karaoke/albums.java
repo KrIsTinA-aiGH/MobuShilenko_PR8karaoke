@@ -1,6 +1,8 @@
 package com.example.pr9karaoke;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +22,15 @@ public class albums extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        ImageView popularImage = findViewById(R.id.ButtonImage);
+
+        if (popularImage != null) {
+            popularImage.setOnClickListener(v -> {
+                // Переход на экран популярных песен
+                Intent intent = new Intent(albums.this, people.class);
+                startActivity(intent);
+            });
+        }
     }
 }
