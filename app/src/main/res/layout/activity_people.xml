@@ -153,13 +153,14 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
+                    android:clickable="true"
                     android:contentDescription="@string/chel_2"
+                    android:focusable="true"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    android:clickable="true"
-                    android:focusable="true"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/rectangle_6" />
+                    app:srcCompat="@drawable/rectangle_6"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
 
                 <TextView
                     android:layout_width="151dp"
